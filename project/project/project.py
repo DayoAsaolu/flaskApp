@@ -6,7 +6,7 @@ from project import db
 
 
 
-app = Flask(__name__) # create the application instance :)
+application = app = Flask(__name__) # create the application instance :)
 app.config.from_object(__name__)
 app.secret_key = "secretkey"
 database = db.Database()
