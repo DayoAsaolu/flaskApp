@@ -1,0 +1,31 @@
+USE CASE
+
+Title: Vote
+Primary Actor:User
+Stakeholders and Interests: 
+	User: want their vote to contribute to the total number of votes
+	Viewers: want to see the number of of votes previously made on the post/comment
+Precondition: User logged in and viewing a post
+Trigger: Either the up vote button or down vote button is clicked
+Main success scenario:
+    1. User views a topic
+    2. User decides to vote
+    3. User’s vote is added to the database
+    4. Page refreshes and updated vote count is displayed in place next to buttons
+
+Extensions:
+	
+	1a. User views votes on a post/comment
+	2a. User clicks up vote
+	2b. User clicks down vote
+
+
+
+USER STORY
+
+	Ol’skipper was from out around the bay and enrolled in COMP 2005 at MUN. He needed help with understanding a topic he wasn’t getting. 
+    So he decided to use the course website to get help. Although the overwhelming number of posts was a problem. And some  posts weren’t useful, 
+    or too hard to follow. But by being able to vote on a post, he felt like he was able to contribute to the website. After a post had too many 
+    negative votes, an admin would remove it if they thought it wasn’t valuable. Aside from the practical side of things, it was also graphically appealing. 
+    The upvote, or downvote button would inactivate upon clicking. One could also push a button to see if any of their buddies agreed or disagreed with their 
+    opinion of a post.

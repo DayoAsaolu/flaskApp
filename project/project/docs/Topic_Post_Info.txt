@@ -1,0 +1,38 @@
+User Story – Create Topic
+
+The user logs into the system. When the user clicks on create topic, the website displays a form for creating a topic. The user enters the topic title to be created and clicks create topic. Upon successful creation of a topic the user is redirected to the main page, which displays the list of topics including the recently created one. 
+
+User Story – Create Post
+
+The user logs into the system. When the user clicks on a topic title, the website loads the posts for that particular topic. If there are not any existing posts, then no posts are shown. When the user clicks on create post, the website redirects to a form to create a post for that particular topic. After the  user enter the post information and clicks create post, the post will be created for that topic. It will also redirect the user to the page for the recently created post. 
+
+
+Use Cases
+
+Title: User deletes topic
+Pre-condition: User is logged into system. System contains at least one topic created by the user.
+Main Success Scenario:
+    1. User clicks opens an existing topic created by user
+    2. User clicks to delete topic
+    3. Topic is deleted from database
+    4. User receives confirmation of deleted topic
+
+
+Title: User deletes a post
+Pre-condition: User is logged into the system. The system contains at least one post created by the user. 
+Main Success Scenario:
+    1. User clicks to  opens an existing topic
+    2. User clicks to open to an existing post created by user
+    3. User clicks to delete post 
+    4. User receives confirmation of deleted post 
+
+
+Title:  User edits post
+Pre-condition: User is logged into the sytem. The system contains at least one post created by user. 
+Main Success Scenario:
+    1. User clicks to open an existing topic 
+    2. User clicks to open an existing post created by user
+    3. User clicks to edit post
+    4. User enters edited post details 
+    5. User clicks to edit post 
+    6. User receives confirmation of edited post
