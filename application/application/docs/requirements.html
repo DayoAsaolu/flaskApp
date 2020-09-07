@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>COMP2005 Group Project Requirements Sheet</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+
+<h1>Requirements List</h1>
+    <ol class="rqlist">
+        <li>Functionality
+            <ol>
+                <li>Content
+                    <ol>
+                        <li data-moscow=m>****USERS CAN CREATE A TOPIC THREAD****
+                            <p class=rqdesc>Users can create a topic thread to hold posts relating to their desired subject.</p>
+                            <p class=rqvali>Can be found in the User Story - Create Topic</p>
+                            <p class=rqveri>Log in, create a new topic thread and view it on the home page.</p>
+                            
+                            <ol>
+                                <li data-moscow="s">Users can upvote or downvote topic threads.</p>
+                                    <p class=rqdesc>
+                                        Users having the ability to up/down vote topics gives desirable feedback to all users as to how relevant
+                                        a topic may be to view. This aspect would serve as a great starting point for new users, and daily users alike.</p>
+                                    <p class=rqvali>
+                                        The functionality of up/down voting of posts (docs/Votes_Info.txt) implies that functionality could
+                                        be extended to topics as discussed in group meeting 1.
+                                    </p>
+                                    <p class=rqveri>View the up/down votes displayed next to a topic on the main page.</p>
+                                </li>
+
+                                <li data-moscow=m>Users can remove a topic thread.
+                                    <p class=rqdesc>Users will be able to remove any topic thread they have created.</p>
+                                    <p class=rqvali>Validation can be found seen in usecase (docs/Topic_Post_Info.txt).
+                                    <p class=rqveri>Log in, delete a topic thread that the user created and fail to find the deleted topic on the website.</p>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li data-moscow=m>****USERS CAN MAKE POSTS.****</p>
+                            <p class=rqdesc>Users should be able to make new/original posts.</p>
+                            <p class=rqvali>Can be found in the usecase (docs/Topic_Post_Info.txt)</p>
+                            <p class=rqveri>Log in, successfully create a new post and view it on the webpage.</p>
+                        
+
+                            <ol>
+                                <li data-moscow=s>****USERS CAN EDIT POSTS.****
+                                    <p class=rqdesc>Users can edit their own posts to make corrections and additions.</p>
+                                    <p class=rqvali>Can be found in the usecase (docs/Topic_Post_Info.txt)</p>
+                                    <p class=rqveri>Log in, edit a post owned by the user and view the edited post.</p>
+                                </li>
+
+                                <li data-moscow=m>Users can delete a post.
+                                    <p class=rqdesc>Users should be able to delete their own past posts.</p>
+                                    <p class=rqvali>Can be found in the usecase (docs/Topic_Post_Info.txt)</p>
+                                    <p class=rqveri>Log in, delete a post owned by the user and view the confirmation message after deletion.</p>
+                                </li>
+
+                                <li data-moscow=s>Users can comment on posts.
+                                    <p class=rqdesc>
+                                        Comments provide an additional layer of communication/feedback between users. Discussion and 
+                                        communication is a key aspect of a platform such as this.</p>
+                                    <p class=rqvali>Referenced team meeting 2.</p>
+                                    <p class=rqveri>Log in, view a post, create a comment and view the comment on the post page (under the original post).</p>
+                                
+                                    <ol>
+                                        <li data-moscow=s>Post owners should be able to select top comments.
+                                            <p class="rqdesc">A moderator or the course instructor can choose the most comprehensive reply to a post so that it permanently appears on top of the comment thread for everyone to see.</p>
+                                            <p class=rqvali>Referenced in team meeting 2.</p>
+                                            <p class=rqveri> Login as a moderator and select the "Make top comment" option associated with a comment. </p>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>User Authentication
+                    <ol>
+                        <li data-moscow=m>****USERS CAN CREATE AUTHENTICATED ACCOUNTS****
+                            <p class=rqdesc>
+                                In order to provide the user a more interactive experience (ie. the ability to create posts, comment on posts etc.) it
+                                is essential that a user is able to create an account. 
+                            </p>
+                            <p class=rqvali>Validated by viewing user story 1 (docs/Username_Info.txt).</p>
+                            <p class=rqveri>Log into the website.</p>
+                        
+                            <ol>
+                                <li data-moscow=s>Users should be able to avoid signing up by simply logging in with their MUN information.
+                                    <p class=rqdesc>
+                                        As this website system is meant to service users taking COMP2005,
+                                        it would be appropriate that users could log in using their MUN credentials. This 
+                                        would mean that these users would not have to create a unique account (since their information
+                                        would already be available from an outside source).
+                                    </p>
+                                    <p class=rqvali>Client interview on Feb 7th, 2018</p>
+                                    <p class=rqveri>Log in using MUN account credentials.</p>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li data-moscow=s>****USERS CAN DELETE THEIR AUTHENTICATED ACCOUNTS****
+                                <p class=rqdesc>
+                                    Should a user wish to discontinue their involvement in the tool they will be able to 
+                                    delete their account. This will result in any contribution made by that user to be unviewable.
+                                </p>
+                                <p class=rqvali>Validated by the use case 2: (docs/Username_Info.txt)</p>
+                                <p class=rqveri>Log in and delete the user.</p>
+                            </li>
+
+                        <li data-moscow=m>****USERS CAN AUTHENTICATE WITH USERNAME/PASSWORD****
+                            <p class=rqdesc>User can login using their own username to access their account.</p>
+                            <p class=rqvali>Validated by the provided project description.</p>
+                            <p class=rqveri>Login using the correct username, password combination.</p>
+                        </li>
+
+                        <li data-moscow=s>****USER WILL HAVE EDITABLE PROFILES****
+                                <p class=rqdesc>A user can check their profile to see their account information.</p>
+                                <p class=rqvali>Verifiable in use case 3: (docs/Username_Info.txt)</p>
+                                <p class=rqveri>Log in and view the users personal profile.</p>
+                                
+                                <ol>
+                                    <li data-moscow=s>Users are able to edit their linked profile.
+                                        <p class=rqdesc>A user who is logged in will be able to edit the information in their publicly available profile, including the option to upload a profile image. </p>
+                                        <p class=rqvali>An implied requirement derived from use case 3: (docs/Username_Info.txt)</p>
+                                        <p class=rqveri>Log in, view the users profile, edit the information and review the changes after submission.</p>
+                                    </li>
+                                </ol>
+                            </li>
+
+                    </ol>
+                </li>
+
+                <li>Groups
+                    <ol>
+                        <li data-moscow=m>****USERS CAN CREATE A GROUP****
+                            <p class=rqdesc>
+                                Groups are a key aspect of any platform designed for collaboration. The ability to create groups
+                                gives users a unique way of bringing together users with similar interests.</p>
+                            <p class=rqvali>Found in use case (docs/Group_Info.txt).</p>
+                            <p class=rqveri>Log in and create your own group.</p>
+                        </li>
+
+                        <li data-moscow=s>****ANY GROUP MEMBER CAN ADD OTHER USERS TO THEIR GROUP****
+                            <p class=rqdesc>
+                                Groups are a key aspect of any platform designed for collaboration. The ability to create groups
+                                gives users a unique way of bringing together users with similar interests.</p>
+                            <p class=rqvali>Found in use case (docs/Group_Info.txt).</p>
+                            <p class=rqveri>View a group the user is in and add another valid user.</p>
+                        </li>
+
+                        <li data-moscow=s>Group owners can remove/kick group members from a group. 
+                            <p class=rqdesc>Should a group owner wish to remove another group member for any reason they should be able to do so.</p>
+                            <p class=rqvali>Found in use case (docs/Group_Info.txt).</p>
+                            <p class=rqveri>As a group owner, view all group members and remove them from the group.</p>
+                        </li>
+
+                        <li data-moscow=s>Users can restrict the viewable topics. 
+                            <p class=rqdesc>Group members have the ability to filter the viewable topics based on if it is a group topic.</p>
+                            <p class=rqvali>Found in use case (docs/Group_Info.txt).</p>
+                            <p class=rqveri>While in a group, click the filter button.</p>
+                        </li>
+
+                    </ol>
+
+                </li>
+
+                <li>Moderators
+                    <ol>
+                        <li data-moscow=s>Moderator priviledges can be given to special users.
+                            <p class=rqdesc>
+                                As the system becomes overloaded with information submitted by various users, the task
+                                of reviewing the systems content can being overwhelming. As such, designating users to take
+                                on moderating task is essential once the system grows beyond a point of no return. 
+                            </p>
+                            <p class=rqvali>Implied requirement based on the project description.</p>
+                            <p class=rqveri>Log in as moderator, view moderater restricted privileges.</p>
+                            
+                            <ol>
+                                <li data-moscow=s>Moderators can make posts or comments unreadable.
+                                    <p class=rqdesc>
+                                        In order to maintain professionalism, and socially acceptable behaviour by users 
+                                        of the service, it is key that designated users are able to review and deem content
+                                        unreadable to other users.  
+                                    </p>
+                                    <p class=rqvali>Derived requirement based on the implied requirement above.</p>
+                                    <p class=rqveri>Log in as a moderator and make a post, or comment, unreadable.</p>
+                                </li>
+                                
+                                <li data-moscow=s> Moderators can remove inactive posts.
+                                    <p class=rqdesc>
+                                        As an extension of moderator duties, giving these special users the ability to remove 
+                                        inactive posts is a tool to help mantain the systems viability and maintenece.
+                                    </p>
+                                    <p class=rqvali>Derived requirement based on the presence of moderators.</p>
+                                    <p class=rqveri>Log in as a moderator and delete a post deemed inactive.</p>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>Subscription
+                    <ol>
+                        <li data-moscow=s>****USERS WILL BE ABLE TO SUBSCRIBE TO TOPICS OF INTEREST****
+                            <p class=rqdesc>
+                                In order for users to gain knowledge and interact with the system efficiently, users will
+                                be able to subscribe to topics in which they wish to follow. This enables benefits such as receiving 
+                                notifications of new posts.    
+                            </p>
+                            <p class=rqvali>Clear requirement of use case (docs/Subscription_Info.txt).</p>
+                            <p class=rqveri>Log in, view a topic, click subscribe and see the subscription verification message.</p>
+                        
+                            <ol>
+                                <li data-moscow=s>****USERS WILL RECEIVE NOTIFICATIONS IN RELATION TO A TOPIC****
+                                    <p class=rqdesc>As a benefit of subscribing to a topic, users will receive notifications when new posts are added to topics.</p>
+                                    <p class=rqvali>Clear requirement of project description.</p>
+                                    <p class=rqveri>Log in and view all notifications generated from new posts in subscribed topics.</p>
+                                
+                                    <ol>
+                                        <li data-moscow=m>****USERS CAN VIEW ALL CURRENT NOTIFICATIONS****
+                                            <p class=rqdesc>
+                                                In order for the user to take advantage of the notifications feature there must
+                                                be a place for users to view all of their current or past notifications. A seperate
+                                                page for viewing notifications was deemed the most appropriate platform.</p>
+                                            <p class=rqvali>A clear requirement found in use case (docs/Subscription_Info.txt).</p>
+                                            <p class=rqveri>Log in, click notifications button and view all available notifications.</p>
+                                        </li>
+
+                                        <li data-moscow=s>Users can view past notifications
+                                            <p class=rqdesc>
+                                                Rather than simply deleting a notification from the users access, a small percentage of previous
+                                                notifications should remain viewable by the user. Recently viewed notifications tend to remain relevant
+                                                to the users interest for a time after it is first seen. This functionality facilitates that need.  
+                                            </p>
+                                            <p class=rqvali>Team meeting 2</p>
+                                            <p class=rqveri>Log in, click notifications button and view previously viewed notifications.</p>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                            <li data-moscow=s>User will be able to unsubscribe from a topic of interest.
+                                <p class=rqdesc>
+                                    Should a user wish to unfollow a topic thred, they will be able to stop receiving notifications by simply
+                                    clicking the unsubscribe button.    
+                                </p>
+                                <p class=rqvali>Implied requirement from use case (docs/Subscription_Info.txt).</p>
+                                <p class=rqveri>Log in, view a topic, click subscribe and see the subscription verification message.</p>
+                            </li>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>Voting
+                    <ol>
+                        <li data-moscow=s>****USERS CAN VOTE ON POSTS****
+                            <p class=rqdesc>In order to express thier appreciation or disgust of a post, users should be able to vote on individual posts.</p>
+                            <p class=rqvali>Validated by use case (docs/Votes_Info.txt).</p>
+                            <p class=rqveri>Log in, view a post and vote.</p>
+                        </li>
+
+                        <li data-moscow=s>****USERS CAN SEE TOTAL NUMBER OF UP AND DOWN VOTES****
+                            <p class=rqdesc>Being able to view the total number of up and down votes enables the user to judge the importance of a post.</p>
+                            <p class=rqvali>Validated by use case (docs/Votes_Info.txt).</p>
+                            <p class=rqveri>Log in, view a post and see the total votes on a post.</p>
+                        </li>
+
+                        <li data-moscow=s>Users can vote on topics.
+                            <p class=rqdesc>Being able to view the total number of up and down votes enables the user to judge the importance of a topic.</p>
+                            <p class=rqvali>Discussed in team meeting 2.</p>
+                            <p class=rqveri>Log in, view a post and see the total votes on a topic.</p>
+                        </li>
+
+                        <li data-moscow=s>Moderators can remove posts with high downvotes.
+                            <p class=rqdesc>Should a post be downvoted too many times, a moderator can remove a post for being deemed unhelpful.</p>
+                            <p class=rqvali>Found in user story (docs/Votes_Info.txt).</p>
+                            <p class=rqveri>Log in as moderator, remove post with high downvotes.</p>
+                        </li>
+
+                        <li data-moscow=s>A viewable list of users who liked a piece of content can be seen.
+                            <p class=rqdesc>Display the users who have voted on the piece of content.</p>
+                            <p class=rqvali>Found in user story (docs/Votes_Info.txt).</p>
+                            <p class=rqveri>Users are displayed when requested.</p>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+
+        <li>Usability
+            <ol> 
+                <li data-moscow=s>Users can create a nickname for themselves.
+                    <p class=rqdesc>
+                        Should a user wish to change the viewable name displayed on comments or posts for example,
+                        there should be a way for users to do so. 
+                    </p>
+                    <p class=rqvali>Team meeting 1.</p>
+                    <p class=rqveri>Log in and change nickname for the user.</p>
+                </li>
+
+                <li data-moscow=s>Moderators should have a special symbol by their name.
+                    <p class=rqdesc>
+                        In order to distinguish a moderator from a regular user, moderators should have a special
+                        symbol to signify their status. This allows regular users to recognize moderators easier when viewing
+                        a post/comment made by a moderator.
+                    </p>
+                    <p class=rqvali>A requirement discussed in team meeting 2.</p>
+                    <p class=rqveri>Log into the system and find a moderator to see the symbol by their username.</p>
+                </li>
+            </ol>
+        </li>
+        <li> Reliability </li>
+        <li> Performance </li>
+        <li> Supportability </li>
+        <li> Design constraints
+            <ol>
+                <li data-moscow=m>Involvement of Flask
+                    <p class=rqdesc>The system requires that flask be used as the main framework manager.</p>
+                    <p class=rqvali>Clear from the project description.</p>
+                    <p class=rqveri>Viewing developed source code.</p>
+                </li>
+            </ol>
+        </li>
+        <li> Implementation requirements</li>
+        <li> Physical requirements</li>
+    </ol>
+
+<h1>Substantial Functional Feature Description</h1>
+
+<p>
+    The substantial feature chosen by the group is the ability to upvote or downvote a post. Initial discussion revealed 
+    that one noticable feature that other software development forums offer is the up/down vote service. This subtle feature acts 
+    as a key component to the way in which users interact with the forums. Posts with higher up-votes tend to become more popular at 
+    a faster rate than its counterparts which this enables good contributions to be found quicker and easier.
+</p>
+<p>  
+    The agreed upon functional limit for the prototype was the feature attached to posts. However, that is not to say that the functionality
+    could not be stretched to other features of the system. Extension ideas included voting on topics and even comments. The full implementation
+    of this feature would not hold back on how it could be utilized by the systems users.
+</p>
+<p>
+    The requirements for the function feature can be found above (1.5).
+</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿User Stories:
+1. As a user I want to be able to create a personal account
+2. As a user I want to be able to delete my account
+3. As a user I want to be able to ﻿view my account information
+
+
+Use Cases:
+
+USE CASE #1:
+
+Title: Creation of new accounts
+Primary Actor: User
+Stakeholders and Interests:
+
+	User: Wants to be able to create new account with unique username.
+
+
+Precondition: Username doesn’t already exist or isn’t a reserved username.
+Trigger: User can click on signup to create new account.
+Main success scenario:
+
+     1. User selects signup action
+     2. The SuD loads the signup page
+     3. User enters username, password, first name, last name in their 
+	relevant fields
+     4. User clicks submit
+     5. SuD flashes message
+     6. If there are no errors, SuD loads up login page
+     7. User logs in using credentials
+
+
+
+USE CASE #2 :
+
+Title: Deleting accounts
+Primary Actor: User
+Stakeholders and Interests:
+
+	User: Wants to be able to delete their account.
+
+
+Precondition: User is logged in.
+Trigger: User can go to account information page and select delete account.
+Main success scenario:
+
+        1. User clicks on his username on top of page
+        2. The SuD loads the account information page
+        3. User clicks the delete account button
+        4. SuD logs out user
+        5. SuD loads home page
+        6. User can no longer login with previous username
+        7. User’s username is replaced by “RemovedAccount” on all posts,
+                topics or groups.
+
+
+
+
+USE CASE #3:
+
+Title: View account information
+Primary Actor: User
+Stakeholders and Interests:
+
+         User: Wants to be able to view account information.
+
+
+Precondition: User is logged in.
+Trigger: User can go to account information page and view account information.
+Main success scenario:
+
+        1. User clicks on his username on top of page
+        2. The SuD loads the account information page
+        3. User information is available to user

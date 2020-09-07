@@ -1,0 +1,43 @@
+
+Use cases:
+
+USE CASE #1:
+
+Title: Subscribes to Topic
+Primary Actor: Authenticated User
+
+Precondition: User must be logged in
+Trigger: User clicks subscribe button
+Main Success Scenario:
+
+    1. User identifies a topic they would like to subscribe to and clicks subscribe
+    2. Database is updated so that the user is added as a subscriber
+    3. Confirmation of subscription is given to the user
+
+Extensions:
+
+    2a. Database update fails
+            2a1. User is notified of failure
+
+USE CASE #2: 
+
+Title: User Checks Notifications 
+Primary Actor: Any User
+Trigger: User clicks notifications button
+Main Scenario:
+
+    1. User clicks notifications button
+    2. Database is queried for all current notifications for the user
+    3. User is redirected to notifications page where all notifications are displayed
+
+Extensions:
+
+    1a. User is not logged in:
+            1a1. Notify user that in order to see notifications that they must be logged in
+            1a2. Give option to log in/sign up (optional)
+ 
+    2a. Database query failed:
+            2a1. User is notified of failure
+
+    3b. No notifications are found:
+            3b1. A proper message is displayed

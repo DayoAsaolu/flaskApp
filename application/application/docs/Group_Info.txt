@@ -1,0 +1,41 @@
+USER STORIES
+
+Create Group
+Mike and his four friends are all first-year computer science students. They want to have a private discussion about A.I at their free time in the weekend. 
+Mike and his friends sign up by creating individual accounts. Mike, being the leader of the group. Log’s in and click on create group. Enter the name of the 
+group “Artificial Intelligence”. Then click on create group.
+
+USE CASES
+
+Title: Adding Users to a group
+Pre-condition: User is logged into the system. Mike created a group called “Artificial Intelligence.
+Main Success Scenario:
+    1. User click on the ***Group***
+    2. User clicks on “Artificial Intelligence”
+    3. User enters the user name the person he wishes to add
+    4. The added user receives a confirmation 
+
+
+Title: Removing Users to a group
+Pre-condition: User is logged into the system. Mike created a group called “Artificial Intelligence. The group has at least two members
+Main Success Scenario:
+    1. User clicks on **Group**
+    2. User clicks on “Artificial Intelligence”
+    3. User clicks enters the user name he wishes to delete from the group
+    4. The removed user receives a confirmation
+
+	
+Title: Members of a group can have optional restricted topics in their group
+Pre-condition: Three users are logged into the system. User1 created a group called “Artificial Intelligence”. User1 added two members.
+Main Success Scenario:
+    1. User1 clicks on Group
+    2. User1 clicks on Artificial Intelligence 
+    3. User1 fills in the create topic column and creates a topic
+
+
+Title: Group Administrator can delete group
+Pre-condition: User is logged in the system. User belong to a group called “Artificial Intelligence”
+Main Success Scenario:
+    1. User clicks on group
+    2. User enter group name in the delete group column and clicks delete group
+    3. The page reloads and a confirms the group no longer exist
